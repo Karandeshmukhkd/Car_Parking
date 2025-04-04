@@ -1,0 +1,39 @@
+🚗 Car Parking Management System – Project Flow
+
+1. User Authentication (Optional)
+User opens the application
+
+Login through a basic form (LoginForm.java)
+
+Validates credentials (can be hardcoded or stored in DB)
+
+
+2. Vehicle Entry
+
+User enters vehicle details (number, type, etc.)
+
+System checks for available parking slots
+
+Slot is allocated and timestamp is recorded
+
+Entry details are stored in the database (VehicleDAO.java)
+
+
+3. Parking Slot Management
+
+Parking slots are tracked in real-time
+
+Status (Available / Occupied) is updated in the database
+
+Slot management logic can be handled in SlotManager.java (optional)
+
+
+4. Vehicle Exit
+
+User enters vehicle number at exit
+
+System fetches entry timestamp and calculates duration
+
+Parking fee is computed (can be flat or time-based)
+
+Vehicle exit is recorded and slot is marked as available again (ExitVehicle.java)
